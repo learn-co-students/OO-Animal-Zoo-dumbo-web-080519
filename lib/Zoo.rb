@@ -1,6 +1,6 @@
 class Zoo
 
-    attr_accessor :name, :location, :animals
+    attr_accessor :name, :location
     @@all = []
 
     def self.all

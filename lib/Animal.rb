@@ -11,6 +11,4 @@ class Animal
         @@all << self
     end
 
-    def 
-
 end
