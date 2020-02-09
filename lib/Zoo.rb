@@ -1,8 +1,9 @@
 class Zoo
 
-    attr_accessor :name, :location
+    attr_accessor :name, :location, :animals
+    @@all = []
 
-    def all
+    def self.all
         @@all
     end
 
@@ -10,8 +11,16 @@ class Zoo
         @location = location
         @name = name
         @@all << self
+        @animals = []
     end
 
+    def self.animals(zoo)
+        zoo.animals.map{ |animal| return animal}
+    end
+
+    def self.addAnimal(animal)
+        @animals << animal
+    end
 
 
 end
